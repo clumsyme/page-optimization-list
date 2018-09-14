@@ -31,13 +31,13 @@
         - If-None-Match 配合E-Tag，如果没有匹配的   E-Tag，则返回新文件
     - 了解渲染流程
         - [关键渲染路径](#关键渲染路径)
-        - [CSS阻塞渲染](#CSS阻塞渲染)
-        - [JavaSctipt阻塞DOM构建与页面渲染] (#JavaSctipt阻塞DOM构建与页面渲染)
+        - [CSS阻塞渲染](#css阻塞渲染)
+        - [JavaSctipt阻塞DOM构建与页面渲染](#javasctipt阻塞dom构建与页面渲染)
         - [优化关键渲染路径](#优化关键渲染路径)
     - 使用HTTP/2
 - 运行优化
     - JavaScript优化
-        - 使用[`requestAnimationFrame`](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame)代替`setTimeout`或 `setInterval`[<sup>[1]</sup>](#关于requestAnimationFrame)
+        - 使用[`requestAnimationFrame`](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame)代替`setTimeout`或 `setInterval`[<sup>[1]</sup>](#关于requestanimationframe)
         - 将长时间运行的代码移到[Web Worker](https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Workers_API)内
     - CSS优化
         - 降低选择器复杂度
@@ -45,7 +45,7 @@
     - [减少重排（重排需要重新计算元素布局）与避免抖动]（https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing?hl=zh-cn）
     - [减少重绘复杂性](https://developers.google.com/web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas?hl=zh-cn)
 
-## 关键渲染路径（页面从字节到渲染的过程）
+## 关键渲染路径
 
 1. DOM构建（骨架）
     1. 字节解析为位版本
